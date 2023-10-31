@@ -71,3 +71,8 @@ def party_planner(cookies, people):
         print("Please enter a good number of people for a party.")
     
     return(num_each, leftovers)
+
+f = open('some_file.text', 'r')
+file_data = f.read()
+f.close()
+print(file_data)
