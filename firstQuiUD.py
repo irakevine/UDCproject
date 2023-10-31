@@ -72,7 +72,7 @@ def party_planner(cookies, people):
     
     return(num_each, leftovers)
 
-f = open('some_file.text', 'r')
+f = open('test.py', 'r')
 file_data = f.read()
 f.close()
 print(file_data)
