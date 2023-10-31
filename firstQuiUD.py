@@ -72,7 +72,12 @@ def party_planner(cookies, people):
     
     return(num_each, leftovers)
 
-f = open('test.py', 'r')
-file_data = f.read()
-f.close()
-print(file_data)
+# f = open('test.py', 'r')
+# file_data = f.read()
+# f.close()
+# print(file_data)
+
+with open("camelot.txt") as song:
+    print(song.read(2))
+    print(song.read(8))
+    print(song.read())
