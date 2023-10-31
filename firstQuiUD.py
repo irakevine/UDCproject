@@ -81,3 +81,6 @@ with open("camelot.txt") as song:
     print(song.read(2))
     print(song.read(8))
     print(song.read())
+
+    print("user_list: {}".format(user_list))
+print("The sum of the even numbers in user_list is: {}.".format(list_sum))
