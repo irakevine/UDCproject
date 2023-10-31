@@ -16,3 +16,8 @@ Welcome to Python3!
 """
 
 print(snake_string * how_many_snakes)  # Use the variable directly, not as a string 'how_many_snakes'
+
+
+num=int(input('Enter a number :')) 
+num+= 20
+print(num)
