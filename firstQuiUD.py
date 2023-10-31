@@ -32,3 +32,12 @@ to {} if you submit all assignments before the due date.\n\n"
 
 for name, assignment, grade in zip(names, assignments, grades):
     print(message.format(name, assignment, grade, int(grade) + int(assignment)*2))
+
+
+#     While True:
+# Try:    
+# x= int(input('Enter a number:'))
+#     break 
+# except:
+# print('That\'s not a valid number!)
+# print('\nAttempted Input\n')
