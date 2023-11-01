@@ -108,5 +108,36 @@ if __name__ == '__main__':
 
 
 
+# Function to create a dictionary from flowers.txt
+def create_flower_dict():
+    flower_dict = {}
+    with open('flowers.txt', 'r') as file:
+        for line in file:
+            letter, flower = line.strip().split(': ')
+            flower_dict[letter] = flower
+    return flower_dict
+
+# Function to ask for user's first and last name
+def get_user_input():
+    first_name = input("Enter your first name: ")
+    last_name = input("Enter your last name: ")
+    return first_name, last_name
+
+# Function to match the user's first name with a flower name
+def match_flower_name():
+    first_name, _ = get_user_input()
+    flower_dict = create_flower_dict()
+    first_letter = first_name[0].lower()
+
+    if first_letter in flower_dict:
+        print(f"The flower name starting with '{first_letter.upper()}' is: {flower_dict[first_letter]}")
+    else:
+        print("Sorry, there's no flower name starting with that letter in the dictionary.")
+
+# Main function
+if __name__ == "__main__":
+    match_flower_name()
+
+
 
   
