@@ -28,3 +28,15 @@ import math
 result = math.exp(3)
 
 print(result)  # This will display the result of e raised to the power of 3
+
+
+from datetime import datetime 
+import pytz 
+utc = pytz.utc
+ist=pytz.timezone('Asia/Kolkata')
+
+now = datetime.now(tz=utc)
+ist_now= now.astimezone(list)
+
+print(now)
+print(ist_now)
