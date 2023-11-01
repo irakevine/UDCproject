@@ -139,5 +139,60 @@ if __name__ == "__main__":
     match_flower_name()
 
 
+class Shirt:
+    def __init__(self, shirt_color, shirt_size, shirt_style, shirt_price):
+        self.color = shirt_color
+        self.size = shirt_size
+        self.style = shirt_style
+        self.price = shirt_price
 
+    def change_price(self, new_price):
+        self.price = new_price
+
+    def discount(self, discount):
+        return self.price * (1 - discount),
+
+
+# Instantiating shirt_one and shirt_two
+shirt_one = Shirt('red', 'S', 'long-sleeve', 25)
+shirt_two = Shirt('orange', 'L', 'short-sleeve', 10)
+
+# Changing the price of shirt_one to 10
+shirt_one.change_price(10)
+
+# Calculating the total cost of shirt_one and shirt_two
+total_cost = shirt_one.price + shirt_two.price
+
+# Calculating the total cost after applying discounts to shirt_one and shirt_two
+discount_shirt_one, = shirt_one.discount(0.14)  # Applying a 14% discount to shirt_one
+discount_shirt_two, = shirt_two.discount(0.06)  # Applying a 6% discount to shirt_two
+total_discount = discount_shirt_one + discount_shirt_two
+
+# Running the tests
+from tests import run_tests
+shirt_one = Shirt("red", "S", "long-sleeve", 25)
+shirt_two = Shirt('orange', 'L', 'short-sleeve', 10)
+
+def run_tests(shirt_one, shirt_two, total_cost, total_discount):
+
+    # Unit tests to check your solution
+    assert shirt_one.price == 25, 'shirt_one price should be 25'
+    print("Shirt one price test passed.")
+    assert shirt_two.price==10,'shirt_two price should be 10'
+    print("Shirt two price test passed.")
+    assert shirt_one.color == "red", ' shirt_one should be red'
+    print("Shirt one color test passed.")
+    assert shirt_two.color == "orange", ' shirt_two should be orange'  
+    print("Shirt two color test passed.")
+    
+    assert shirt_one.style == 'long-sleeve', 'shirt_one should be long_sleeve style'
+    print("Shirt one style test passed.")
+    
+    assert shirt_two.style == 'short-sleeve', 'shirt_two should be short_sleeve style'
+    print("Shirt two style test passed.")
+    # ...
+
+
+run_tests(shirt_one, shirt_two, total_cost, total_discount)
+   
   
