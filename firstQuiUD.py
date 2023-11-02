@@ -324,3 +324,32 @@ class Pants:
     # Like in the previous question, assume the average weight of an American adult male is 180 pounds with a standard deviation of 34 pounds. The distribution of weights follows a normal distribution. What is the probability that a man weighs somewhere between 120 and 155 pounds = 0.19?
 
     # Now consider a Binomial distribution. Assume that 15% of the population is allergic to cats. If you randomly select 60 people for a medical trial, what is the probability that 7 of those people are allergic to cats = 0.12?
+
+#     class Clothing:
+#     def __init__(self, color, size, style, price):
+#         self.color = color
+#         self.size = size
+#         self.style = style
+#         self.price = price
+
+#     def change_price(self, price):
+#         self.price = price
+
+#     def calculate_discount(self, discount):
+#         return self.price * (1 - discount)
+
+# class Shirt(Clothing):
+#     def __init__(self, color, size, style, price, long_or_short):
+#         Clothing.__init__(self, color, size, style, price)
+#         self.long_or_short = long_or_short
+
+#     def double_price(self):
+#         self.price = 2*self.price
+
+# class Pants(Clothing):
+#     def __init__(self, color, size, style, price, waist):
+#         Clothing.__init__(self, color, size, style, price)
+#         self.waist = waist
+
+#     def calculate_discount(self, discount):
+#         return self.price * (1 - discount / 2)
