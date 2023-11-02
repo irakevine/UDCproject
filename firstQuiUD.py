@@ -196,3 +196,45 @@ def run_tests(shirt_one, shirt_two, total_cost, total_discount):
 run_tests(shirt_one, shirt_two, total_cost, total_discount)
    
   
+# Write a SalesPerson class with the following characteristics:
+
+# the class name should be SalesPerson
+# the class attributes should include
+# first_name
+# last_name
+# employee_id
+# salary
+# pants_sold
+# total_sales
+# the class should have an init function that initializes all of the attributes
+# the class should have four methods
+# sell_pants() a method to change the price attribute
+# calculate_sales() a method to calculate the sales
+# display_sales() a method to print out all the pants sold with nice formatting
+# calculate_commission() a method to calculate the salesperson commission based on total sales and a percentage
+
+class SalesPerson:
+    def __init__(self, first_name, last_name, employee_id, salary):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.employee_id = employee_id
+        self.salary = salary
+        self.pants_sold = []
+        self.total_sales = 0
+
+    def sell_pants(self, pants):
+        self.pants_sold.append(pants)
+
+    def display_sales(self):
+        for pants in self.pants_sold:
+            print(f"color: {pants.color}, waist_size: {pants.waist_size}, length: {pants.length}, price: {pants.price}")
+
+    def calculate_sales(self):
+        total = 0
+        for pants in self.pants_sold:
+            total += pants.price
+        self.total_sales = total
+        return self.total_sales
+
+    def calculate_commission(self, percentage):
+        return percentage * self.total_sales
