@@ -319,3 +319,6 @@ class Pants:
             float: the discounted price
         """
         return self.price * (1 - percentage)
+    
+
+    # Like in the previous question, assume the average weight of an American adult male is 180 pounds with a standard deviation of 34 pounds. The distribution of weights follows a normal distribution. What is the probability that a man weighs somewhere between 120 and 155 pounds = 0.19?
