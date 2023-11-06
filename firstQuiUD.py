@@ -850,3 +850,11 @@ print("Sum of elements in the tuple:", sum_tuple)
 # print(language[:-4])
 
 ['P', 'y', 't']
+
+# What is the output of the following code?
+
+# a={"a":1,"b":2,"c":3}
+
+# b=dict(zip(a.values(),a.keys()))
+
+# b
