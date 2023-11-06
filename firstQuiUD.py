@@ -804,3 +804,27 @@ class Gaussian(Distribution):
 # # command to upload to the pypi repository
 # twine upload dist/*
 # pip install dsnd-probability
+
+
+# Write a Python program to check whether a given key already exists in a dictionary.
+
+# dict = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60} 
+
+# Given dictionary
+my_dict = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+
+# Function to check if a key exists in the dictionary
+def check_key_exists(dictionary, key):
+    if key in dictionary:
+        return True
+    else:
+        return False
+
+# Key to check
+key_to_check = 3
+
+# Checking if the key exists in the dictionary
+if check_key_exists(my_dict, key_to_check):
+    print(f"The key {key_to_check} exists in the dictionary.")
+else:
+    print(f"The key {key_to_check} does not exist in the dictionary.")
