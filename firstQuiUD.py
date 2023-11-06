@@ -828,3 +828,10 @@ if check_key_exists(my_dict, key_to_check):
     print(f"The key {key_to_check} exists in the dictionary.")
 else:
     print(f"The key {key_to_check} does not exist in the dictionary.")
+
+
+
+# Write a Python program to get sum of elements in tuple.
+# Note: (without built-in functions or control flow statements)
+
+# tuplex = (4, 8, 3)
