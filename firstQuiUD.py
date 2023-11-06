@@ -842,3 +842,9 @@ tuplex = (4, 8, 3)
 sum_tuple = (tuplex[0] + tuplex[1] + tuplex[2])
 
 print("Sum of elements in the tuple:", sum_tuple)
+
+# What is the output of the following program?
+
+# language = ['P', 'y', 't', 'h', 'o', 'n']
+
+# print(language[:-4])
