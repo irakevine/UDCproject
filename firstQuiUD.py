@@ -835,3 +835,10 @@ else:
 # Note: (without built-in functions or control flow statements)
 
 # tuplex = (4, 8, 3)
+
+tuplex = (4, 8, 3)
+
+# Using the sum without control flow statements or built-in functions
+sum_tuple = (tuplex[0] + tuplex[1] + tuplex[2])
+
+print("Sum of elements in the tuple:", sum_tuple)
