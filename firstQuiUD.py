@@ -848,3 +848,5 @@ print("Sum of elements in the tuple:", sum_tuple)
 # language = ['P', 'y', 't', 'h', 'o', 'n']
 
 # print(language[:-4])
+
+['P', 'y', 't']
