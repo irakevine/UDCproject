@@ -858,3 +858,5 @@ print("Sum of elements in the tuple:", sum_tuple)
 # b=dict(zip(a.values(),a.keys()))
 
 # b
+
+{1: 'a', 2: 'b', 3: 'c'}
