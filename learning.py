@@ -28,3 +28,26 @@ for i in range (type_counts.shape[0]):
     # Print the string value on the bar. 
     # Read more about the arguments of text() function [here](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.text.html)
     plt.text(count+1, i, pct_string, va='center')
+
+# Example 4. Print the text (proportion) below the bars of a Vertical plot.
+
+# Considering the same chart from the Example 1 above, print the text (proportion) BELOW the bars
+base_color = sb.color_palette()[0]
+sb.countplot(data=pkmn_types, x='type', color=base_color, order=type_order);
+
+
+# Recalculating the type_counts just to have clarity.
+type_counts = pkmn_types['type'].value_counts()
+
+# get the current tick locations and labels
+locs, labels = plt.xticks(rotation=90) 
+
+# loop through each pair of locations and labels
+for loc, label in zip(locs, labels):
+
+    # get the text property for the label to get the correct count
+    count = type_counts[label.get_text()]
+    pct_string = '{:0.1f}%'.format(100*count/n_pokemon)
+
+    # print the annotation just below the top of the bar
+    plt.text(loc, count+2, pct_string, ha = 'center', color = 'black')
