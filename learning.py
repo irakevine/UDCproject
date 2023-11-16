@@ -51,3 +51,23 @@ for loc, label in zip(locs, labels):
 
     # print the annotation just below the top of the bar
     plt.text(loc, count+2, pct_string, ha = 'center', color = 'black')
+
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sb
+%matplotlib inline
+
+# Read the data from a CSV file
+# Original source of data: https://www.kaggle.com/manjeetsingh/retaildataset available under C0 1.0 Universal (CC0 1.0) Public Domain Dedication License
+sales_data = pd.read_csv('sales_data.csv')
+sales_data.head(10)
+sales_data.shape
+(8190, 12)
+
+# Use either of the functions below
+# sales_data.isna()
+sales_data.isnull()
+
+sales_data.isna().sum()
