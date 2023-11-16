@@ -71,3 +71,12 @@ sales_data.shape
 sales_data.isnull()
 
 sales_data.isna().sum()
+
+# Step 2 - Prepare a NaN tabular data
+
+# Let's drop the column that do not have any NaN/None values
+na_counts = sales_data.drop(['Date', 'Temperature', 'Fuel_Price'], axis=1).isna().sum()
+print(na_counts)
+
+Use seaborn.barplot()
+
