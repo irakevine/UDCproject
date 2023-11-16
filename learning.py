@@ -80,3 +80,18 @@ print(na_counts)
 
 Use seaborn.barplot()
 
+# Step 3 - Plot the bar chart from the NaN tabular data, and also print values on each bar 
+
+# The first argument to the function below contains the x-values (column names), the second argument the y-values (our counts).
+# Refer to the syntax and more example here - https://seaborn.pydata.org/generated/seaborn.barplot.html
+sb.barplot(na_counts.index.values, na_counts)
+
+# get the current tick locations and labels
+plt.xticks(rotation=90) 
+
+# Logic to print value on each bar
+for i in range (na_counts.shape[0]):
+    count = na_counts[i]
+    
+    # Refer here for details of the text() - https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.text.html
+    plt.text(i, count+300, count, ha = 'center', va='top')
