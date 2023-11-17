@@ -110,3 +110,15 @@ fuel_econ.head(10)
 plt.scatter(data = fuel_econ, x = 'displ', y = 'comb');
 plt.xlabel('Displacement (1)')
 plt.ylabel('Combined Fuel Eff. (mpg)')
+
+# Example 3. Plot the regression line on the transformed data
+
+def log_trans(x, inverse = False):
+    if not inverse:
+        return np.log10(x)
+    else:
+        return np.power(10, x)
+
+sb.regplot(fuel_econ['displ'], fuel_econ['comb'].apply(log_trans))
+tick_locs = [10, 20, 50, 100]
+plt.yticks(log_trans(tick_locs), tick_locs);
