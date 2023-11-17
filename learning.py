@@ -95,3 +95,18 @@ for i in range (na_counts.shape[0]):
     
     # Refer here for details of the text() - https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.text.html
     plt.text(i, count+300, count, ha = 'center', va='top')
+
+
+    # Example 1 a. Scatter plot showing negative correlation between two variables
+
+
+    # TO DO: Necessary import
+
+# Read the CSV file
+fuel_econ = pd.read_csv('fuel_econ.csv')
+fuel_econ.head(10)
+
+# Scatter plot
+plt.scatter(data = fuel_econ, x = 'displ', y = 'comb');
+plt.xlabel('Displacement (1)')
+plt.ylabel('Combined Fuel Eff. (mpg)')
