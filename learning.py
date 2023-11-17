@@ -53,32 +53,32 @@ for loc, label in zip(locs, labels):
     plt.text(loc, count+2, pct_string, ha = 'center', color = 'black')
 
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sb
-%matplotlib inline
+# import numpy as np
+# import pandas as pd
+# import matplotlib.pyplot as plt
+# import seaborn as sb
+# %matplotlib inline
 
-# Read the data from a CSV file
-# Original source of data: https://www.kaggle.com/manjeetsingh/retaildataset available under C0 1.0 Universal (CC0 1.0) Public Domain Dedication License
-sales_data = pd.read_csv('sales_data.csv')
-sales_data.head(10)
-sales_data.shape
-(8190, 12)
+# # Read the data from a CSV file
+# # Original source of data: https://www.kaggle.com/manjeetsingh/retaildataset available under C0 1.0 Universal (CC0 1.0) Public Domain Dedication License
+# sales_data = pd.read_csv('sales_data.csv')
+# sales_data.head(10)
+# sales_data.shape
+# (8190, 12)
 
-# Use either of the functions below
-# sales_data.isna()
-sales_data.isnull()
+# # Use either of the functions below
+# # sales_data.isna()
+# sales_data.isnull()
 
-sales_data.isna().sum()
+# sales_data.isna().sum()
 
-# Step 2 - Prepare a NaN tabular data
+# # Step 2 - Prepare a NaN tabular data
 
-# Let's drop the column that do not have any NaN/None values
-na_counts = sales_data.drop(['Date', 'Temperature', 'Fuel_Price'], axis=1).isna().sum()
-print(na_counts)
+# # Let's drop the column that do not have any NaN/None values
+# na_counts = sales_data.drop(['Date', 'Temperature', 'Fuel_Price'], axis=1).isna().sum()
+# print(na_counts)
 
-Use seaborn.barplot()
+# Use seaborn.barplot()
 
 # Step 3 - Plot the bar chart from the NaN tabular data, and also print values on each bar 
 
