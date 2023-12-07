@@ -22,3 +22,6 @@ and_weight1 = 0.0
 and_weight2 = 0.0
 and_bias = 0.0
 
+and_weight1 = 0.5
+and_weight2 = 0.5
+and_bias = -0.7
