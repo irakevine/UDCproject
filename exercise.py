@@ -25,3 +25,11 @@ and_bias = 0.0
 and_weight1 = 0.5
 and_weight2 = 0.5
 and_bias = -0.7
+
+# What are the weights and bias for the NOT perceptron?
+# Set the weights (not_weight1, not_weight2) and bias not_bias to the values that calculate the NOT operation on the second input and ignores the first input.:"
+
+# TODO: Set not_weight1, not_weight2, and not_bias
+not_weight1 = 0.0
+not_weight2 = 0.0
+not_bias = 0.0
