@@ -29,6 +29,8 @@ and_bias = -0.7
 # What are the weights and bias for the NOT perceptron?
 # Set the weights (not_weight1, not_weight2) and bias not_bias to the values that calculate the NOT operation on the second input and ignores the first input.:"
 
+
+# And now, your time to shine! Let's code the formula for the Softmax function in Python.
 # TODO: Set not_weight1, not_weight2, and not_bias
 not_weight1 = 0.0
 not_weight2 = 0.0
