@@ -38,3 +38,15 @@ not_bias = 0.0
 not_weight1 = 0.0  # Ignored input
 not_weight2 = -1.0  # Weight for the second input
 not_bias = 0.5  # Bias
+
+import numpy as np
+
+def softmax(L):
+    """
+    This function takes as input a list of numbers, and returns the list
+    of values given by the softmax function.
+    """
+    exp_L = np.exp(L)
+    sum_exp_L = np.sum(exp_L)
+    probabilities = exp_L / sum_exp_L
+    return probabilities
