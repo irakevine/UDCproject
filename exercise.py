@@ -11,3 +11,15 @@ Y = X[X % 2 != 0]
 
 print("Original Array (X):\n", X)
 print("\nArray with Odd Numbers (Y):\n", Y)
+
+
+
+What are the weights and bias for the AND perceptron?
+Set the weights (and_weight1, and_weight2) and bias (and_bias) to values that will correctly determine the AND operation as shown above. More than one set of values will work!:"
+
+# TODO: Set and_weight1, and_weight2, and and_bias
+and_weight1 = 0.0
+and_weight2 = 0.0
+and_bias = 0.0
+
+"
