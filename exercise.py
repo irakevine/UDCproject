@@ -52,3 +52,6 @@ def softmax(L):
     sum_exp_L = np.sum(exp_L)
     probabilities = exp_L / sum_exp_L
     return probabilities
+
+
+# Now, time to shine! Let's code the formula for cross-entropy in Python. As in the video, Y in the quiz is for the category, and P is the probability.
