@@ -195,16 +195,16 @@ print("Prediction accuracy: {:.3f}".format(accuracy))
 
 
 # Change your directory
-cd <path_to_a_directory_where_you_want_to_download_the_repository>
+# cd <path_to_a_directory_where_you_want_to_download_the_repository>
 
 # Download the repository
-git clone https://github.com/udacity/AIPND.git
+# git clone https://github.com/udacity/AIPND.git
 
 # Go inside the downloaded repository
-cd AIPND/NumPy\ Mini-Project/
+# cd AIPND/NumPy
 
 # List the files. Did you see the `solution.ipynb` file as well? Refer to the solution only when it becomes essential. 
-ls
+# ls
 
 # OPTIONAL STEP - Copy the .ipynb file to another directory
-cp Mean\ Normalization\ and\ Data\ Separation.ipynb <complete_path_to_the_directory_where_you_want_to_keep_this_notebook>
+# cp Mean\ Normalization\ and\ Data\ Separation.ipynb <complete_path_to_the_directory_where_you_want_to_keep_this_notebook>
