@@ -21,3 +21,11 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+#     One Hot Encoding (OHE) is a process to.......
+# *
+# 1 point
+# convert non-numeric categorica values in a column into numeric values
+# converting numeric values in a column into non-numeric categorical values
+# converting integers values in a column into decimals
